@@ -308,7 +308,7 @@ Task_Wifi(): Wi-Fi的主要任务函数，在初始化过程中，连接特定�
 
 Task_Reader():读写器的主要任务函数，在初始化阶段通过SPI与MFRC522进行通信，得到版本信息，判断版本是否合法以验证读卡器的安全性。在正常状态下，每次判断是否有新的卡出现，出现后读取卡片信息（若选择认证，则验证其中一个block的密钥以检测是否是合法卡片，若不选择认证则可以兼容校园卡）；在安全模式下，读取卡片与正常模式下一样。
 
-<img src="./Images/Prin/reader.png" width=200 align=center />
+<img src="./Images/Prin/Reader.png" width=200 align=center />
 
 Task_Finger(): 指纹模块的主要函数，初始化时候多次尝试是否能够连接（用验证密码的方式进行连接），在主函中也有断开重连的过程，在正常工作中，主要的过程是读取一张图像，判断是否有手指，然后进行特征提取与分析，根据置信度确定是否有合法用户进行考勤，若有则通过EEPROM读取绑定的卡片信息进行发布。在安全模式中，根据指令进行enroll。具体的请看模块的例子程序enrool和fingerprint(文件->示例->Adafruit Fingerprint Sensor Library->enroll/fringerprint)
 
@@ -316,7 +316,7 @@ Task_Finger(): 指纹模块的主要函数，初始化时候多次尝试是否�
 
 硬件的连接如图所示，接口如表所示：
 
-<img src="./Images/Prin/flow.png" width=500 align=center />
+<img src="./Images/Prin/Flow.png" width=500 align=center />
 
 | MCU 接口 | 模块接口                           |
 | :------: | ---------------------------------- |
@@ -555,7 +555,7 @@ A：电容触摸按键的灵敏度可调，详细可以查看库文件（mpr121.
 
 ### 5.2 服务器以及通信代理的搭建
 
-目前按照教程没有发现问题，如有问题请联系16级物联网班欧润民（email：issacrunmin@whu.edu.cn）
+目前按照教程没有发现问题，如有问题欢迎请联系（email：issacrunmin@whu.edu.cn）
 
 
 
