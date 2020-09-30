@@ -219,7 +219,7 @@ OLED即有机发光二极管，其轻薄、省电等特性，在03年开始这�
 
 ### 1.2 定位步态识别系统原理
 
-（相关技术原理请联系欧润民，email: issacrunmin@whu.edu.cn）。
+（相关技术原理请联系email: issacrunmin@whu.edu.cn）。
 
 ### 1.3 服务器基本组成
 
@@ -447,14 +447,14 @@ MariaDB [wieye]> ALTER TABLE `Class` ADD  CONSTRAINT `teacherNo_e1` FOREIGN KEY 
 Query OK, 0 rows affected (0.811 sec)
 Records: 0  Duplicates: 0  Warnings: 0
 
-MariaDB [wieye]> INSERT INTO `Student` (`userNO`, `cName`, `specialty`, `domainId`, `sex`, `idCard`, `eName`,`quarters`, `mobile`, `workStartTime`, `joinCompanyTime`, `leaveCompanyTime`,`tecCompetence`, `remark`) VALUES ('2016301500240', ' 欧润民', '物联网工程', '物联网班', '男','FEF238E700000000', '物联网系统综合设计实验', '班长', '877536754', '2019-06-17', '2019-06-17', '2019-08-01', '嵌入式设计；网页编程；服务器', '无');
+MariaDB [wieye]> INSERT INTO `Student` (`userNO`, `cName`, `specialty`, `domainId`, `sex`, `idCard`, `eName`,`quarters`, `mobile`, `workStartTime`, `joinCompanyTime`, `leaveCompanyTime`,`tecCompetence`, `remark`) VALUES ('2016301500001', ' RunminOu', '物联网工程', '物联网班', '男','FEF238E700000000', '物联网系统综合设计实验', '班长', '1123534798', '2019-06-17', '2019-06-17', '2019-08-01', '嵌入式设计；网页编程；服务器', '无');
 Query OK, 1 row affected (0.083 sec)
 
-MariaDB [wieye]> INSERT INTO `Student` (`userNO`, `cName`, `specialty`, `domainId`, `sex`, `idCard`, `eName`,`quarters`, `mobile`, `workStartTime`, `joinCompanyTime`, `leaveCompanyTime`,`tecCompetence`, `remark`) VALUES ('2016301500354', ' 徐杨', '物联网工程', '物联网班', '男','FEF238E700000000', '物联网系统综合设计', '学委', '1489384099', '2019-06-17', '2019-06-17','2019-08-01', NULL, '无');
+MariaDB [wieye]> INSERT INTO `Student` (`userNO`, `cName`, `specialty`, `domainId`, `sex`, `idCard`, `eName`,`quarters`, `mobile`, `workStartTime`, `joinCompanyTime`, `leaveCompanyTime`,`tecCompetence`, `remark`) VALUES ('2016301500000', ' YangXu', '物联网工程', '物联网班', '男','FEF238E700000000', '物联网系统综合设计', '学委', '123456', '2019-06-17', '2019-06-17','2019-08-01', NULL, '无');
 Query OK, 1 row affected (0.077 sec)
 
-MariaDB [wieye]> INSERT INTO `attendance` (`NO`, `userNo`, `ACDate`, `State`, `ACState`, `remark`) VALUES ('1', '2016301500240', now(), '1', '1', NULL), ('2', '2016301500354', now(), '2', '1', NULL);
-Query OK, 2 rows affected (0.092 sec),('3', '2016301500240', '2019-06-17', '1', '1', NULL)
+MariaDB [wieye]> INSERT INTO `attendance` (`NO`, `userNo`, `ACDate`, `State`, `ACState`, `remark`) VALUES ('1', '2016301500000', now(), '1', '1', NULL), ('2', '2016301500000', now(), '2', '1', NULL);
+Query OK, 2 rows affected (0.092 sec),('3', '2016301500000', '2019-06-17', '1', '1', NULL)
 Query OK, 2 rows affected (0.089 sec)
 Records: 2  Duplicates: 0  Warnings: 0
 ```
